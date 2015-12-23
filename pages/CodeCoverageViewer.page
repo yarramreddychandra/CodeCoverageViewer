@@ -1,0 +1,22 @@
+<apex:page controller="CodeCoverageViewerController" action="{!doInit}">
+	<apex:form>
+		<apex:pageBlock title="コードカバー率" >
+			<apex:pageBlockTable value="{!result.records}" var="record">
+				<apex:column headerValue="クラス/トリガ">
+					<apex:outputLink value="/{!record.ApexClassOrTriggerId}" target="_blank" >
+						<apex:outputText value="{!record.ApexClassOrTrigger.Name}"/>
+					</apex:outputLink>
+				</apex:column>
+				<apex:column headerValue="カバー行数" style="text-align: right;" >
+					<apex:outputText value="{!record.NumLinesCovered}" />
+				</apex:column>
+				<apex:column headerValue="総行数" style="text-align: right;" >
+					<apex:outputText value="{!record.NumLinesCovered + record.NumLinesUncovered}" />
+				</apex:column>
+				<apex:column headerValue="カバー率" style="text-align: right;" >
+					<apex:outputText value="{!FLOOR((record.NumLinesCovered / (record.NumLinesCovered + record.NumLinesUncovered) * 100))}" />
+				</apex:column>
+			</apex:pageBlockTable>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>
