@@ -17,6 +17,10 @@ public with sharing class CodeCoverageViewerController {
 		HTTPResponse res = http.send(req);
 		return res.getBody();
 	}
+	
+	public class ApexCodeCoverageAggregateResultss {
+		
+	}
 
 	public class ApexCodeCoverageAggregateResult {
 		public Integer size {get; set;}
@@ -25,10 +29,6 @@ public with sharing class CodeCoverageViewerController {
 		public Object queryLocator {get; set;}
 		public String entityTypeName {get; set;}
 		public List<Records> records {get; set;}
-	}
-	
-	public class ApexCodeCoverageAggregateResultss {
-		
 	}
 
 	public class Records {
