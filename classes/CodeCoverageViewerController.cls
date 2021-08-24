@@ -27,7 +27,7 @@ public with sharing class CodeCoverageViewerController {
 		public List<Records> records {get; set;}
 	}
 	
-	public class ApexCodeCoverageAggregateResults {
+	public class ApexCodeCoverageAggregateResultss {
 		
 	}
 
