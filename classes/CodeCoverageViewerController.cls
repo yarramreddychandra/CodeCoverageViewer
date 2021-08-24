@@ -26,6 +26,10 @@ public with sharing class CodeCoverageViewerController {
 		public String entityTypeName {get; set;}
 		public List<Records> records {get; set;}
 	}
+	
+	public class ApexCodeCoverageAggregateResults {
+		
+	}
 
 	public class Records {
 		public Attributes attributes {get; set;}
