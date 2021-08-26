@@ -1,0 +1,20 @@
+[
+
+{
+
+"id": "01p0E000003TXzAQAW",
+"name": "DemoController",
+"totalLines": 8,
+"lines": {
+ "5": 1,
+ "10": 1,
+ "12": 1,
+"16": 1,
+ "19": 1,
+ "26": 1,
+"27": 1
+},
+"totalCovered": 8,
+"coveredPercent": 100
+}
+]
